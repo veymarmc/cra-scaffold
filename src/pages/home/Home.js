@@ -21,6 +21,9 @@ function Home() {
 				<Link to="/about" className="Home-link">
 					About US!
 				</Link>
+				<Link to="/todo" className="Home-link">
+					Todo
+				</Link>
 			</header>
 		</div>
 	);
