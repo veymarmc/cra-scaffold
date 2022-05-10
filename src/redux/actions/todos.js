@@ -6,15 +6,13 @@ export const actions = {
 export function addTodo(description) {
 	return {
 		type: actions.ADD_TODO,
-		description,
-		completed: false
+		description
 	};
 }
 
-export function toggleTodo(id, completed) {
+export function toggleTodo(id) {
 	return {
 		type: actions.TOGGLE_TODO,
-		id,
-		completed
+		id
 	};
 }

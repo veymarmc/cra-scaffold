@@ -1,9 +1,19 @@
-function Task({ description, completed, id }) {
+import { connect } from 'react-redux';
+import { toggleTodo } from '../../redux/actions/todos';
+
+function Task({ description, completed, id, toggleTodo }) {
 	return (
-		<li key={id}>
-			{description}, {completed.toString()}
+		<li
+			style={{ textDecoration: completed ? 'line-through' : 'none' }}
+			onClick={() => toggleTodo(id)}
+		>
+			{description}
 		</li>
 	);
 }
 
-export default Task;
+const mapDispatchToProps = dispatch => ({
+	toggleTodo: id => dispatch(toggleTodo(id))
+});
+
+export default connect(null, mapDispatchToProps)(Task);

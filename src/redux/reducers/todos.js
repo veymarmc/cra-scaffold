@@ -8,12 +8,12 @@ function todos(state = [], action) {
 				{
 					id: state.length,
 					description: action.description,
-					completed: action.completed
+					completed: false
 				}
 			];
 		case actions.TOGGLE_TODO:
 			return state.map((todo, index) =>
-				index === action.id ? { ...todo, completed: action.completed } : todo
+				index === action.id ? { ...todo, completed: !todo.completed } : todo
 			);
 		default:
 			return state;
