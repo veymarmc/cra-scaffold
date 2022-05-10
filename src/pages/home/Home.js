@@ -18,6 +18,9 @@ function Home() {
 				>
 					Learn react to save your future!
 				</a>
+				<Link to="/counter" className="Home-link">
+					Counter Page using modern Redux!
+				</Link>
 				<Link to="/about" className="Home-link">
 					About US!
 				</Link>
