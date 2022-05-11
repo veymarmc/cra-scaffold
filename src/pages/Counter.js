@@ -1,9 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { increment, decrement } from './../store/slices/counterSlice';
+import { counterActions } from './../store';
 
 function Counter() {
 	const count = useSelector(state => state.counter.value);
 	const dispatch = useDispatch();
+	const { increment, decrement } = counterActions;
 
 	return (
 		<div>
