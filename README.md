@@ -1,3 +1,23 @@
+# CRA Scaffold
+
+This is a scaffold template with the most useful tools for creating react applications. This is done with the javascript version of the create-react-app too.
+
+## What this scaffold contains
+
+The current additional tools were added in order to work easily with a react project:
+- Prettier, for working with the preconfigured eslint that comes with CRA.
+- Add the necessary prettier rules that the project will follow
+- Husky, in order to add pre-commit hooks and apply all the prettier rules and the eslint rules before commit.
+- Set a basic react-router example and also install all the basic dependecies.
+  - **Warning,** when setting to production we should modify the server in order our roots to work.
+- Add a basic redux usage
+  - There was done another little "todos" functionality in another branch in order to check the basic or redux.
+  - the current branch is installed with the new redux technology which is the redux toolkit, also added a little functionality using it.
+
+## Is the scaffold a finished scaffold?
+
+No, this scaffold is being actively updated and growing while more useful tools will appear for making the workflow to create a react app easier and easier.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,19 +88,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### What this scaffold contains
-
-The current additional tools were added in order to work easily with a react project:
-- install prettier for working with the preconfigured eslint that comes with CRA.
-- and the necessary prettier rules that the project will follow
-- install husky in order to add pre-commit hooks and apply all the prettier rules and the eslint rules before commit.
-- set a basic react-router example and also install all the basic dependecies.
-  - **Warning,** when setting to production we should modify the server in order our roots to work.
-- Add a basic redux usage
-  - there was done another little "todos" functionality in another branch in order to check the basic or redux.
-  - the current branch is installed with the new redux technology which is the redux toolkit, also added a little functionality using it.
-
-## Is the scaffold finished?
-
-No, this is the first basic scaffold which is able to be cloned and work with it, however if there are found another useful tools and have to be added to this scaffold, this project will grow.
