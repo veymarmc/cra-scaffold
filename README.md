@@ -13,6 +13,7 @@ The current additional tools were added in order to work easily with a react pro
 - Add a basic redux usage
   - There was done another little "todos" functionality in another branch in order to check the basic or redux.
   - the current branch is installed with the new redux technology which is the redux toolkit, also added a little functionality using it.
+- Install the sass preprocessor.
 
 ## Is the scaffold a finished scaffold?
 
